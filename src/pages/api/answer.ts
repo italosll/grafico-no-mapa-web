@@ -78,7 +78,9 @@ export default async function saveAnswer(answer:AnswerProps) {
     .then(() => {
       alert('Resposta enviada com sucesso!');
       localStorage.clear();
-    }).catch(() => {
+    }).catch((error) => {
       alert('Resposta não enviada...');
+      console.log("error")
+      console.log(error)
     });
 }
