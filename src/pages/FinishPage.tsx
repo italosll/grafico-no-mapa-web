@@ -51,9 +51,12 @@ export default function FinishPage() {
     const answer = mountAnswerObject();
 
     async function save() {
-      if (validation(answer)) {
-        const resp = await saveAnswer(answer);
-        console.log(resp);
+      if(localStorage.getItem('finished') !== "true"){
+
+        if (validation(answer)) {
+          const resp = await saveAnswer(answer);
+          console.log(resp);
+        }
       }
     }
     save();
