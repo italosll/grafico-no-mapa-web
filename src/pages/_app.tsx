@@ -9,6 +9,8 @@ import { AccuracyQuestionsContextProvider } from '../contexts/AccuracyQuestionsC
 import { QualitativeQuestionsContextProvider } from '../contexts/QualitativeQuestionsContext';
 import { MapContextProvider } from '../contexts/MapContext';
 import FinishPage from './FinishPage';
+import Head from 'next/head';
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -21,7 +23,18 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  return (
+  return (<>
+    <Head>
+    <title>Gráfico no mapa</title>
+    <meta name="Ítalo Moreira Silva" 
+    content={`
+      Questionário referente a metamodelos de geovisualização, 
+      as respostas serão utilizadas para mensurar aspéctos 
+      qualitativos e de eficácia do metamodelos propostos
+    `} />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>
+
     <ChakraProvider theme={theme}>
       <FlowProvider>
         <AccuracyQuestionsContextProvider>
@@ -33,6 +46,7 @@ function MyApp({ Component, pageProps }) {
         </AccuracyQuestionsContextProvider>
       </FlowProvider>
     </ChakraProvider>
+    </>
   );
 }
 
