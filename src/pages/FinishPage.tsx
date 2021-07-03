@@ -56,13 +56,14 @@ export default function FinishPage() {
         if (validation(answer)) {
           const resp = await saveAnswer(answer);
           console.log(resp);
+          localStorage.clear();
+          localStorage.setItem('finished', 'true');
         }
       }
     }
     save();
-
-    localStorage.clear();
     localStorage.setItem('finished', 'true');
+
   }, []);
 
   return (
