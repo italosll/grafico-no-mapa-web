@@ -28,9 +28,9 @@ export default function MapGroup({ backgroundColorProp }: MapGroupProps) {
   const [actualPage, setActualPage] = useState('/');
 
   function choosebackground(background) {
-    localStorage.setItem('background_color', background);
-    setBackgroundColor(background);
-    setRedyToNextPage(true);
+    // localStorage.setItem('background_color', background);
+    // setBackgroundColor(background);
+    // setRedyToNextPage(true);
   }
 
   useEffect(() => {
