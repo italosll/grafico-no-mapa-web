@@ -28,12 +28,16 @@ interface FlowProps {
   colorScheme: color;
   backgroundColor: string;
   actualPage: string;
+  displayWarning: boolean;
   setcontextAnswers: Dispatch<SetStateAction<Array<string>>>;
   setRedyToNextPage: Dispatch<SetStateAction<boolean>>;
   setNextPage: Dispatch<SetStateAction<string>>;
   setColorScheme: Dispatch<SetStateAction<color>>;
   setBackgroundColor: Dispatch<SetStateAction<string>>;
   setActualPage: Dispatch<SetStateAction<string>>;
+  showWarning: ()=>void;
+  hideWarning: ()=>void;
+
 }
 
 export const FlowContext = createContext({} as FlowProps);
@@ -45,6 +49,15 @@ export function FlowProvider({ children }) {
   const [nextPage, setNextPage] = useState('/#');
   const [colorScheme, setColorScheme] = useState(colors[3]);
   const [backgroundColor, setBackgroundColor] = useState('');
+  const [displayWarning, setDisplayWarning] = useState(true)
+
+  function showWarning(){
+    setDisplayWarning(true)
+  } 
+
+  function hideWarning(){
+    setDisplayWarning(false)
+  } 
 
   useEffect(() => {
     const colorSchemeStorage = localStorage.getItem('esquema_de_cores');
@@ -58,12 +71,15 @@ export function FlowProvider({ children }) {
   return (
     <FlowContext.Provider
       value={{
+        displayWarning,
         contextAnswers,
         redyToNextPage,
         nextPage,
         colorScheme,
         backgroundColor,
         actualPage,
+        showWarning,
+        hideWarning,
         setcontextAnswers,
         setRedyToNextPage,
         setNextPage,
