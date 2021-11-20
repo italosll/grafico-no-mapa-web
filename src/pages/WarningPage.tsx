@@ -46,7 +46,7 @@ export default function WarningPage() {
           backgroundSize="cover"
           backgroundPosition="center"
         />
-        <Text color="white" textAlign="center" fontSize="2rem" maxWidth={{base:"80vw", lg:"50vw"}} fontWeight="700">
+        <Text color="white" textAlign="center" fontSize="120%" maxWidth={{base:"80vw", lg:"50vw"}} fontWeight="700">
 
           Navegadores alternativos podem ter problemas para renderizar os componentes deste questionário.
           <br/>Por favor utilize o navegador google chrome!
