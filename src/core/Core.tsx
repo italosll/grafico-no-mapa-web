@@ -57,7 +57,7 @@ export function plotSections(map, percentages) {
   for (let i = 0; i < percentages.length; i++) {
     const higherLimit = bboxAuxiliary.geometry.coordinates[0][2][1];
     const inferiorLimit = bboxAuxiliary.geometry.coordinates[0][1][1];
-    clipedSections[i] = definePolyBasedPercentage(
+    clipedSections[i] = definePolygonBasedOnPercentage(
       map,
       bboxAuxiliary,
       percentages[i],
@@ -73,22 +73,22 @@ export function plotSections(map, percentages) {
   return clipedSections;
 }
 
-export function definePolyBasedPercentage(
+export function definePolygonBasedOnPercentage(
   map,
   bboxAuxiliary,
   targetPercentage,
-  inferiorLimit,
-  higherLimit,
+  bottomLimit,
+  topLimit,
 ) {
-  const totalArea = calcularAreaOriginal(map.features);
-  const interval = higherLimit - inferiorLimit;
+  const totalArea = calculateOriginalArea(map.features);
+  const interval = topLimit - bottomLimit;
   const distribution = [];
 
   for (let i = 0; i < 100; i++) {
-    distribution[99 - i] = higherLimit - (interval * i) / 100;
+    distribution[99 - i] = topLimit - (interval * i) / 100;
   }
 
-  let previousClipedArea = bboxClip(
+  let area = bboxClip(
     map.features[0].geometry,
     bboxAuxiliary.bbox,
   );
@@ -100,18 +100,18 @@ export function definePolyBasedPercentage(
     bboxAuxiliary.geometry.coordinates[0][3][1] = aux;
     const cliped = bboxClip(map.features[0].geometry, bboxAuxiliary.bbox);
 
-    const clipedArea = calcularAreaOriginal([cliped]);
-    const clipedPercentualOfTotalArea = (clipedArea * 100) / totalArea;
+    const newArea = calculateOriginalArea([cliped]);
+    const percentual = (newArea * 100) / totalArea;
 
-    if (clipedPercentualOfTotalArea >= targetPercentage) {
-      previousClipedArea = cliped;
+    area = cliped;
+    if (percentual >= targetPercentage) {
       break;
-    } else previousClipedArea = cliped;
+    } 
   }
-  return previousClipedArea;
+  return area;
 }
 
-export function calcularAreaOriginal(data) {
+export function calculateOriginalArea(data) {
   const polygonSelected = polygon(data[0].geometry.coordinates);
   const areaSelected = area(polygonSelected);
   return areaSelected;
