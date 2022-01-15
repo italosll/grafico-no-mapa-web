@@ -90,7 +90,7 @@ export default function SelectTextLabeled({
                     .toLowerCase()
                     .normalize('NFD')
                     .replace(/[\u0300-\u036f]/g, ''),
-                  option,
+                  replaceAgeoption(option),
                 );
               }}
             >
@@ -102,4 +102,14 @@ export default function SelectTextLabeled({
       <Text color="transparent">erro</Text>
     </Flex>
   );
+}
+
+const replaceAgeoption = (option: string) => {
+  
+  if (option === '31-40') return '30-40'
+  if (option ==='41-50' ) return '40-50'
+  if (option === '51+') return '50+'
+  return option
+  
+  
 }

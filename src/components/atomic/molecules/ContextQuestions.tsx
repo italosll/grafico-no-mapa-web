@@ -7,7 +7,7 @@ import InputTextTypedLabeled from './InputTextLabeled copy';
 import InputTextLabeled from './InputTextLabeled copy';
 import { FlowContext } from '../../../contexts/FlowContext';
 
-const ageOptions = ['0-10', '11-20', '21-30', '30-40', '40-50', '50+'];
+const ageOptions = ['0-10', '11-20', '21-30', '31-40', '41-50', '51+'];
 const sexOptions = ['Masculino', 'Feminino'];
 const visualImpairmentOptions = [
   'nenhuma',
