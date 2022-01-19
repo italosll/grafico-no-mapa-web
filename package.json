@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "yarn && yarn build && npx next start"
+    "start": "yarn && yarn build && npx next start",
+    "install_build_start_v1": "yarn && yarn build && npx next start --scripts-prepend-node-path /home/graficon/nodevenv/repositories/grafico-no-mapa-web/12/bin/node",
+    "install_build_start_v2":"yarn && yarn build && npx next start --scripts-prepend-node-path auto"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.0",
