@@ -1,6 +1,6 @@
 import {
   Box, Flex, FlexProps, Text,
-} from '@chakra-ui/layout';
+} from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
 // eslint-disable-next-line max-len
 import { QualitativeQuestionsContext } from '../../../contexts/QualitativeQuestionsContext';

@@ -1,4 +1,4 @@
-import { Text, Flex } from '@chakra-ui/layout';
+import { Text, Flex } from '@chakra-ui/react';
 
 const otavioProps = {
   border: 'solid 2px #000',

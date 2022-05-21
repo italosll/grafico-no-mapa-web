@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-nested-ternary */
-import { ImageProps } from '@chakra-ui/image';
-import { Flex } from '@chakra-ui/layout';
+import { ImageProps } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { useContext, useEffect } from 'react';
 // eslint-disable-next-line max-len
 import { AccuracyQuestionsContext } from '../../../contexts/AccuracyQuestionsContext';

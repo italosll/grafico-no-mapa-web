@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import { useContext, useEffect } from 'react';
 // eslint-disable-next-line max-len
 import { AccuracyQuestionsContext } from '../../../contexts/AccuracyQuestionsContext';

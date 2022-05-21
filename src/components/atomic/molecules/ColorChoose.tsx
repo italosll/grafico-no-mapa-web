@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import { useContext } from 'react';
 import ColorContainer from './ColorContainer';
 import MapGroup from './MapGroup';

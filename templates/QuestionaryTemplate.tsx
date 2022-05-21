@@ -1,5 +1,5 @@
 /* eslint-disable react/require-default-props */
-import { Flex, FlexProps, Text } from '@chakra-ui/layout';
+import { Flex, FlexProps, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import Div100vh from 'react-div-100vh';
 import Title from '../src/components/atomic/atoms/Title';

@@ -1,5 +1,5 @@
-import { Button, ButtonProps } from '@chakra-ui/button';
-import { Flex, Text } from '@chakra-ui/layout';
+import { Button, ButtonProps } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import { FlexProps, Input } from '@chakra-ui/react';
 
 import { useState } from 'react';

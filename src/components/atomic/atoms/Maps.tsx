@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import { Image, ImageProps } from '@chakra-ui/image';
+import { Image, ImageProps } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
 import { BarMap } from './BarMap';
 import { CircMap } from './CircMap';

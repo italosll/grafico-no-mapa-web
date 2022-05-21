@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import { useContext, useEffect } from 'react';
 import QuestionaryTemplate from '../../templates/QuestionaryTemplate';
 import Loading from '../components/atomic/atoms/Loading';

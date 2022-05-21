@@ -1,4 +1,4 @@
-import { Flex, FlexProps } from '@chakra-ui/layout';
+import { Flex, FlexProps } from '@chakra-ui/react';
 import ColorGroup from './ColorGroup';
 const ColorContainerProps: FlexProps = {
   rounded: { base: '2xl', lg: '30px' },

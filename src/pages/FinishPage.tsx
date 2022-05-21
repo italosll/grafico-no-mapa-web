@@ -1,6 +1,6 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
-import { Flex, Text } from '@chakra-ui/layout';
+import { Flex, Text } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import Div100vh from 'react-div-100vh';
 import validation from '../../validation/validation';

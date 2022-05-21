@@ -1,4 +1,4 @@
-import { Image, ImageProps } from '@chakra-ui/image';
+import { Image, ImageProps } from '@chakra-ui/react';
 import { background } from '@chakra-ui/styled-system';
 
 const EmojiProps: ImageProps = {

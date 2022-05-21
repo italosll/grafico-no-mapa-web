@@ -1,4 +1,4 @@
-import { Button } from '@chakra-ui/button';
+import { Button } from '@chakra-ui/react';
 import { useContext, useEffect } from 'react';
 import QuestionaryTemplate from '../../templates/QuestionaryTemplate';
 import { FlowContext } from '../contexts/FlowContext';

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import Div100vh from 'react-div-100vh';
 import OtavioButton from '../components/atomic/atoms/OtavioButton';
 import OtavioResultFunctionCard from '../components/atomic/atoms/OtavioResultCard';

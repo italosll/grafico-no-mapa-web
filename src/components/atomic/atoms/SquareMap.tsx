@@ -19,7 +19,7 @@ import {
 } from 'react-simple-maps';
 
 import { useContext, useEffect, useState } from 'react';
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import { getCenters, colorInRange } from '../../../core/Core';
 import goias from '../../../maps/goias.json';
 

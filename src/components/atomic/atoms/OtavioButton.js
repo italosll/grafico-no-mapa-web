@@ -1,5 +1,5 @@
-import { Img } from '@chakra-ui/image';
-import { Text, Flex } from '@chakra-ui/layout';
+import { Img } from '@chakra-ui/react';
+import { Text, Flex } from '@chakra-ui/react';
 
 export default function otavioButton({ label, icon }) {
   return (

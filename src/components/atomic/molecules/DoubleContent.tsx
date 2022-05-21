@@ -1,4 +1,4 @@
-import { Flex, FlexProps } from '@chakra-ui/layout';
+import { Flex, FlexProps } from '@chakra-ui/react';
 import CustomButton from '../atoms/CustomButton';
 import Maps from '../atoms/Maps';
 import SingleMap from '../atoms/SingleMap';

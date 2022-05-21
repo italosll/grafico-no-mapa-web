@@ -1,5 +1,5 @@
-import { ImageProps } from '@chakra-ui/image';
-import { Flex } from '@chakra-ui/layout';
+import { ImageProps } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { useContext } from 'react';
 import { FlowContext } from '../../../contexts/FlowContext';
 import { SquareMap } from './SquareMap';

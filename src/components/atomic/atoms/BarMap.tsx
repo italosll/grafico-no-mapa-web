@@ -13,7 +13,7 @@ import {
 } from 'react-simple-maps';
 
 import { useEffect, useState } from 'react';
-import { Flex, FlexProps } from '@chakra-ui/layout';
+import { Flex, FlexProps } from '@chakra-ui/react';
 import { plotSections } from '../../../core/Core';
 import goias from '../../../maps/goias.json';
 

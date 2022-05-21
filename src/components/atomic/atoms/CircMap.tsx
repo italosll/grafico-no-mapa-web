@@ -20,7 +20,7 @@ import {
 } from 'react-simple-maps';
 
 import { useEffect, useState } from 'react';
-import { Flex } from '@chakra-ui/layout';
+import { Flex } from '@chakra-ui/react';
 import { polygon } from '@turf/turf';
 import {
   plotSections,

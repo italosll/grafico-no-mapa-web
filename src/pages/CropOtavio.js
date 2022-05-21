@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/layout';
+import { Flex, Text } from '@chakra-ui/react';
 import Div100vh from 'react-div-100vh';
 
 import OtavioButton from '../components/atomic/atoms/OtavioButton';

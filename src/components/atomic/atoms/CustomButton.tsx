@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Button } from '@chakra-ui/button';
-import { Flex } from '@chakra-ui/layout';
+import { Button } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { useContext } from 'react';
 import router from 'next/router';
 import { FlowContext } from '../../../contexts/FlowContext';

@@ -1,4 +1,4 @@
-import { Flex, FlexProps } from '@chakra-ui/layout';
+import { Flex, FlexProps } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
 import { FlowContext } from '../../../contexts/FlowContext';
 import Maps from '../atoms/Maps';

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
-import { Button, ButtonProps } from '@chakra-ui/button';
-import { Flex, Text } from '@chakra-ui/layout';
+import { Button, ButtonProps } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import { FlexProps } from '@chakra-ui/react';
 
 import {

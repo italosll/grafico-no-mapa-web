@@ -1,6 +1,6 @@
-import { Flex, Text } from '@chakra-ui/layout';
+import { Flex, Text } from '@chakra-ui/react';
 import { useContext, useEffect, useState } from 'react';
-import { Button } from '@chakra-ui/button';
+import { Button } from '@chakra-ui/react';
 import QuestionaryTemplate from '../../../../templates/QuestionaryTemplate';
 import SelectTextLabeled from './SelectTextLabeled';
 import InputTextTypedLabeled from './InputTextLabeled copy';
