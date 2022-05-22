@@ -74,7 +74,7 @@ export const SquareMap = ({
       <Flex {...props}>
         <ComposableMap
           projection="geoMercator"
-          projectionConfig={{ scale: 5500, rotate: rotateParam }}
+          projectionConfig={{ scale: 5500, rotate: (rotateParam as any) }}
         >
           {centers?.map((circ, index) => (
             <Marker key={index} coordinates={circ.geometry.coordinates}>

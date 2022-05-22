@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { Spinner } from '@chakra-ui/spinner';
+ 
 import { useEffect } from 'react';
 
 export default function Loading() {
