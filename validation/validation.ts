@@ -2,9 +2,9 @@
 import * as yup from 'yup';
 
 const schema = yup.object().shape({
-  age_interval: yup.string().required().matches(/(^0-10$|^11-20$|^21-30$|^30-40$|^40-50$|^50+$)/, { excludeEmptyString: true }),
-  visual_impairment: yup.string().required().matches(/(nenhuma$|^Miopia$|^Astigmatismo)/, { excludeEmptyString: true }),
-  education_level: yup.string().required().matches(/(^alfabetizado$|^Ens. Fundamental Completo$|^Ens. Médio Completo$|^Ens. Superior Completo$|^Pós-Graduação Completo$)/, { excludeEmptyString: true }),
+  age_interval: yup.string().required().matches(/(^0-10$|^11-20$|^21-30$|^31-40$|^41-50$|^51+$)/, { excludeEmptyString: true }),
+  visual_impairment: yup.string().required().matches(/(Nenhuma$|^Miopia$|^Astigmatismo$|^Ambos$)/, { excludeEmptyString: true }),
+  education_level: yup.string().required().matches(/(^Alfabetizado$|^Ens. Fundamental Completo$|^Ens. Médio Completo$|^Ens. Superior Completo$|^Pós-Graduação Completo$)/, { excludeEmptyString: true }),
   sex: yup.string().required().matches(/(Masculino$|^Feminino$)/, { excludeEmptyString: true }),
   background_color: yup.string().required().matches(/(white$|^dark$)/, { excludeEmptyString: true }),
   color_scheme: yup.string().required().matches(/(Quente$|^Frio$|^Neutro$)/, { excludeEmptyString: true }),

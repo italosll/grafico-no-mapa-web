@@ -39,7 +39,7 @@ type AnswerProps ={
   qq4c: string,
 }
 export default async function saveAnswer(answer:AnswerProps) {
-  await axios.post('http://amoreiradev.com.br/answer', {
+  await axios.post('http://grafico-no-mapa-api.herokuapp.com/answer', {
     age_interval: answer.age_interval,
     visual_impairment: answer.visual_impairment,
     education_level: answer.education_level,

@@ -46,16 +46,17 @@ const answerWrong = {
 
 };
 
-const ageOptions = ['0-10', '11-20', '21-30', '30-40', '40-50', '50+'];
+const ageOptions = ['0-10', '11-20', '21-30', '31-40', '41-50', '51+'];
 const sexOptions = ['Masculino', 'Feminino'];
 const visualImpairmentOptions = [
-  'nenhuma',
+  'Nenhuma',
   'Astgmatismo',
   'Miopia',
-
+  'Ambos'
 ];
+
 const educationLevelOptions = [
-  'alfabetizado',
+  'Alfabetizado',
   'Ens. Fundamental Completo',
   'Ens. Médio Completo',
   'Ens. Superior Completo',
